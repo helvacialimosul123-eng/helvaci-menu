@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Helvaci Ali Mosul Menu</title>
+
+<style>
+body{
+margin:0;
+background:#2d1713;
+font-family:Arial,sans-serif;
+color:white;
+text-align:center;
+}
+
+.header{
+padding:30px 15px;
+}
+
+.logo{
+width:120px;
+border-radius:50%;
+background:white;
+padding:10px;
+}
+
+h1{
+margin:20px 0;
+font-size:32px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:1fr;
+gap:20px;
+padding:20px;
+max-width:700px;
+margin:auto;
+}
+
+.gallery img{
+width:100%;
+border-radius:20px;
+cursor:pointer;
+box-shadow:0 8px 20px rgba(0,0,0,.35);
+transition:.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.02);
+}
+
+.viewer{
+display:none;
+position:fixed;
+inset:0;
+background:rgba(0,0,0,.95);
+justify-content:center;
+align-items:center;
+padding:20px;
+}
+
+.viewer img{
+max-width:100%;
+max-height:100%;
+border-radius:15px;
+}
+
+.close{
+position:absolute;
+top:20px;
+right:25px;
+font-size:40px;
+color:white;
+cursor:pointer;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+
+<img class="logo" src="logo.png">
+
+<h1>Menu</h1>
+
+</div>
+
+<div class="gallery">
+
+<img src="menu1.jpg" onclick="openImage(this.src)">
+<img src="menu2.jpg" onclick="openImage(this.src)">
+<img src="menu3.jpg" onclick="openImage(this.src)">
+<img src="menu4.jpg" onclick="openImage(this.src)">
+
+</div>
+
+<div class="viewer" id="viewer" onclick="closeImage()">
+
+<span class="close">&times;</span>
+
+<img id="big">
+
+</div>
+
+<script>
+
+function openImage(src){
+document.getElementById("viewer").style.display="flex";
+document.getElementById("big").src=src;
+}
+
+function closeImage(){
+document.getElementById("viewer").style.display="none";
+}
+
+</script>
+
+</body>
+</html>
