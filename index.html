@@ -1,50 +1,58 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Helvaci Ali Mosul Menu</title>
+
+<title>Helvaci Ali Mosul | Menu</title>
 
 <style>
-body{
+
+*{
 margin:0;
-background:#2d1713;
+padding:0;
+box-sizing:border-box;
 font-family:Arial,sans-serif;
+}
+
+body{
+background:#2B1915;
 color:white;
-text-align:center;
 }
 
 .header{
-padding:30px 15px;
+padding:35px 20px;
+text-align:center;
 }
 
-.logo{
-width:120px;
-border-radius:50%;
-background:white;
-padding:10px;
+.header h1{
+font-size:34px;
+margin-bottom:10px;
+color:#F5EBDD;
 }
 
-h1{
-margin:20px 0;
-font-size:32px;
+.header p{
+color:#D8C7B7;
+font-size:16px;
 }
 
 .gallery{
+max-width:900px;
+margin:auto;
+padding:20px;
 display:grid;
 grid-template-columns:1fr;
-gap:20px;
-padding:20px;
-max-width:700px;
-margin:auto;
+gap:25px;
 }
 
 .gallery img{
 width:100%;
 border-radius:20px;
 cursor:pointer;
-box-shadow:0 8px 20px rgba(0,0,0,.35);
-transition:.3s;
+box-shadow:0 10px 25px rgba(0,0,0,.35);
+transition:.25s;
 }
 
 .gallery img:hover{
@@ -54,10 +62,14 @@ transform:scale(1.02);
 .viewer{
 display:none;
 position:fixed;
-inset:0;
+left:0;
+top:0;
+width:100%;
+height:100%;
 background:rgba(0,0,0,.95);
 justify-content:center;
 align-items:center;
+z-index:999;
 padding:20px;
 }
 
@@ -71,10 +83,18 @@ border-radius:15px;
 position:absolute;
 top:20px;
 right:25px;
-font-size:40px;
-color:white;
+font-size:42px;
 cursor:pointer;
+color:white;
 }
+
+.footer{
+text-align:center;
+padding:35px;
+color:#CDB9A8;
+font-size:14px;
+}
+
 </style>
 
 </head>
@@ -83,18 +103,33 @@ cursor:pointer;
 
 <div class="header">
 
-<img class="logo" src="logo.png">
-
 <h1>Menu</h1>
+
+<p>Helvaci Ali Mosul</p>
 
 </div>
 
 <div class="gallery">
 
-<img src="menu1.jpg" onclick="openImage(this.src)">
-<img src="menu2.jpg" onclick="openImage(this.src)">
-<img src="menu3.jpg" onclick="openImage(this.src)">
-<img src="menu4.jpg" onclick="openImage(this.src)">
+<img src="helvaciali.mosul_20260713_170724_401.jpg" onclick="openImage(this.src)">
+
+<img src="helvaciali.mosul_20260713_170727_802.jpg" onclick="openImage(this.src)">
+
+<img src="helvaciali.mosul_20260713_170731_340.jpg" onclick="openImage(this.src)">
+
+<img src="helvaciali.mosul_20260713_170737_476.jpg" onclick="openImage(this.src)">
+
+<img src="helvaciali.mosul_20260713_170741_607.jpg" onclick="openImage(this.src)">
+
+<img src="helvaciali.mosul_20260713_170744_003.jpg" onclick="openImage(this.src)">
+
+<img src="helvaciali.mosul_20260713_170746_034.jpg" onclick="openImage(this.src)">
+
+<img src="helvaciali.mosul_20260713_170747_675.jpg" onclick="openImage(this.src)">
+
+<img src="helvaciali.mosul_20260713_170749_742.jpg" onclick="openImage(this.src)">
+
+<img src="helvaciali.mosul_20260713_170753_150.jpg" onclick="openImage(this.src)">
 
 </div>
 
@@ -103,6 +138,12 @@ cursor:pointer;
 <span class="close">&times;</span>
 
 <img id="big">
+
+</div>
+
+<div class="footer">
+
+© Helvaci Ali Mosul
 
 </div>
 
@@ -120,4 +161,5 @@ document.getElementById("viewer").style.display="none";
 </script>
 
 </body>
+
 </html>
