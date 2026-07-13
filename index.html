@@ -2,163 +2,101 @@
 <html lang="ar" dir="rtl">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helvaci Ali Mosul Menu</title>
 
-<title>Helvaci Ali Mosul | Menu</title>
+    <meta name="description" content="Helvaci Ali Mosul Menu">
 
-<style>
+    <link rel="stylesheet" href="style.css">
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-body{
-background:#2B1915;
-color:white;
-}
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-.header{
-padding:35px 20px;
-text-align:center;
-}
-
-.header h1{
-font-size:34px;
-margin-bottom:10px;
-color:#F5EBDD;
-}
-
-.header p{
-color:#D8C7B7;
-font-size:16px;
-}
-
-.gallery{
-max-width:900px;
-margin:auto;
-padding:20px;
-display:grid;
-grid-template-columns:1fr;
-gap:25px;
-}
-
-.gallery img{
-width:100%;
-border-radius:20px;
-cursor:pointer;
-box-shadow:0 10px 25px rgba(0,0,0,.35);
-transition:.25s;
-}
-
-.gallery img:hover{
-transform:scale(1.02);
-}
-
-.viewer{
-display:none;
-position:fixed;
-left:0;
-top:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,.95);
-justify-content:center;
-align-items:center;
-z-index:999;
-padding:20px;
-}
-
-.viewer img{
-max-width:100%;
-max-height:100%;
-border-radius:15px;
-}
-
-.close{
-position:absolute;
-top:20px;
-right:25px;
-font-size:42px;
-cursor:pointer;
-color:white;
-}
-
-.footer{
-text-align:center;
-padding:35px;
-color:#CDB9A8;
-font-size:14px;
-}
-
-</style>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<div class="header">
+<header>
 
-<h1>Menu</h1>
+<h1>منيو Helvaci Ali Mosul</h1>
 
-<p>Helvaci Ali Mosul</p>
+<p>اختر القسم</p>
+
+</header>
+
+<main class="gallery">
+
+<a href="images/helva.jpg" class="card">
+<img src="images/helva.jpg" alt="حلوى السميد">
+<span>حلوى السميد</span>
+</a>
+
+<a href="images/coffee.jpg" class="card">
+<img src="images/coffee.jpg" alt="القهوة">
+<span>القهوة</span>
+</a>
+
+<a href="images/milk-coffee.jpg" class="card">
+<img src="images/milk-coffee.jpg" alt="قهوة حليب">
+<span>قهوة حليب</span>
+</a>
+
+<a href="images/iced-latte.jpg" class="card">
+<img src="images/iced-latte.jpg" alt="ايس لاتيه">
+<span>ايس لاتيه</span>
+</a>
+
+<a href="images/frappe-mojito.jpg" class="card">
+<img src="images/frappe-mojito.jpg" alt="فرابي وموهيتو">
+<span>فرابي وموهيتو</span>
+</a>
+
+<a href="images/natural-juice.jpg" class="card">
+<img src="images/natural-juice.jpg" alt="عصائر طبيعية">
+<span>عصائر طبيعية</span>
+</a>
+
+<a href="images/tea-smoothie.jpg" class="card">
+<img src="images/tea-smoothie.jpg" alt="شاي وسموذي">
+<span>شاي وسموذي</span>
+</a>
+
+<a href="images/cheesecake-dessert.jpg" class="card">
+<img src="images/cheesecake-dessert.jpg" alt="تشيز كيك والحلويات">
+<span>تشيز كيك والحلويات</span>
+</a>
+
+<a href="images/cookies.jpg" class="card">
+<img src="images/cookies.jpg" alt="كوكيز">
+<span>كوكيز</span>
+</a>
+
+<a href="images/pancake-crepe.jpg" class="card">
+<img src="images/pancake-crepe.jpg" alt="بان كيك وكريب">
+<span>بان كيك وكريب</span>
+</a>
+
+<a href="images/mini-pancake.jpg" class="card">
+<img src="images/mini-pancake.jpg" alt="ميني بانكيك">
+<span>ميني بانكيك</span>
+</a>
+
+</main>
+
+<div id="viewer">
+
+<span id="close">&times;</span>
+
+<img id="fullImage" src="" alt="">
 
 </div>
 
-<div class="gallery">
-
-<img src="helvaciali.mosul_20260713_170724_401.jpg" onclick="openImage(this.src)">
-
-<img src="helvaciali.mosul_20260713_170727_802.jpg" onclick="openImage(this.src)">
-
-<img src="helvaciali.mosul_20260713_170731_340.jpg" onclick="openImage(this.src)">
-
-<img src="helvaciali.mosul_20260713_170737_476.jpg" onclick="openImage(this.src)">
-
-<img src="helvaciali.mosul_20260713_170741_607.jpg" onclick="openImage(this.src)">
-
-<img src="helvaciali.mosul_20260713_170744_003.jpg" onclick="openImage(this.src)">
-
-<img src="helvaciali.mosul_20260713_170746_034.jpg" onclick="openImage(this.src)">
-
-<img src="helvaciali.mosul_20260713_170747_675.jpg" onclick="openImage(this.src)">
-
-<img src="helvaciali.mosul_20260713_170749_742.jpg" onclick="openImage(this.src)">
-
-<img src="helvaciali.mosul_20260713_170753_150.jpg" onclick="openImage(this.src)">
-
-</div>
-
-<div class="viewer" id="viewer" onclick="closeImage()">
-
-<span class="close">&times;</span>
-
-<img id="big">
-
-</div>
-
-<div class="footer">
-
-© Helvaci Ali Mosul
-
-</div>
-
-<script>
-
-function openImage(src){
-document.getElementById("viewer").style.display="flex";
-document.getElementById("big").src=src;
-}
-
-function closeImage(){
-document.getElementById("viewer").style.display="none";
-}
-
-</script>
+<script src="script.js"></script>
 
 </body>
 
