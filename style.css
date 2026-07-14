@@ -11,10 +11,12 @@ color:#222;
 }
 
 .hero{
-background:#2b1915;
+background:
+linear-gradient(rgba(20,12,10,.65), rgba(20,12,10,.65)),
+url("hero.jpg") center center/cover no-repeat;
 color:#fff;
 text-align:center;
-padding:60px 20px;
+padding:90px 20px;
 position:relative;
 overflow:hidden;
 }
