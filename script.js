@@ -39,3 +39,14 @@ document.addEventListener("keydown", function(event){
     }
 
 });
+document.querySelectorAll(".card").forEach(card => {
+
+    card.addEventListener("touchstart", () => {
+        card.style.transform = "scale(0.97)";
+    });
+
+    card.addEventListener("touchend", () => {
+        card.style.transform = "";
+    });
+
+});
