@@ -60,6 +60,7 @@ cursor:pointer;
 transition:transform .35s ease,
 box-shadow .35s ease;
 box-shadow:0 12px 35px rgba(0,0,0,.10);
+}
 
 .card:hover{
 transform:translateY(-8px);
