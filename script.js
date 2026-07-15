@@ -8,7 +8,7 @@ function openMenu(title, image) {
 
     document.body.style.overflow = "hidden";
     
-
+window.location.hash = "menu";
 }
 
 function closeMenu() {
@@ -16,6 +16,9 @@ function closeMenu() {
     document.getElementById("menuModal").style.display = "none";
 
     document.body.style.overflow = "auto";
+    if (window.location.hash === "#menu") {
+    history.back();
+    }
 
 }
 
@@ -51,4 +54,12 @@ document.querySelectorAll(".card").forEach(card => {
     });
 
 });
+window.addEventListener("hashchange", function () {
 
+    if (window.location.hash !== "#menu") {
+
+        closeMenu();
+
+    }
+
+});
