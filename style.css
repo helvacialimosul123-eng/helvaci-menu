@@ -165,10 +165,13 @@ text-align:center;
 .modal img{
 max-width:95%;
 max-height:82vh;
-border-radius:15px;
-box-shadow:0 0 30px rgba(255,255,255,.15);
+border-radius:22px;
+border:2px solid rgba(255,255,255,.08);
+box-shadow:
+0 25px 60px rgba(0,0,0,.45),
+0 0 35px rgba(190,150,95,.18);
 margin-top:20px;
-animation:zoom .25s ease;    
+animation:zoom .25s ease;
 }
 
 .modal h2{
