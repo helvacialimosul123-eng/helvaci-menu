@@ -10,6 +10,8 @@ html{
 body{
 background:#f5efe7;
 color:#222;
+    -webkit-font-smoothing:antialiased;
+text-rendering:optimizeLegibility;
 }
 
 .hero{
