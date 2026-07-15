@@ -58,8 +58,7 @@ padding:30px 20px;
 text-align:center;
 cursor:pointer;
 transition:.3s;
-box-shadow:0 8px 25px rgba(0,0,0,.08);
-}
+box-shadow:0 12px 35px rgba(0,0,0,.10);
 
 .card:hover{
 transform:translateY(-8px);
