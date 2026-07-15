@@ -395,6 +395,9 @@ left:18px;
 }
 @keyframes fadeUp{
 
+
+    
+
 from{
 opacity:0;
 transform:translateY(20px);
@@ -407,3 +410,30 @@ transform:translateY(0);
 
 }
     
+.ripple{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    transform:scale(0);
+
+    background:rgba(255,255,255,.18);
+
+    animation:ripple .6s linear;
+
+    pointer-events:none;
+
+}
+
+@keyframes ripple{
+
+    to{
+
+        transform:scale(4);
+
+        opacity:0;
+
+    }
+
+}
