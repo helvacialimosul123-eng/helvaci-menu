@@ -7,8 +7,11 @@ function openMenu(title, image) {
     document.getElementById("menuModal").style.display = "block";
 
     document.body.style.overflow = "hidden";
-    
-window.location.hash = "menu";
+
+    if (window.location.hash !== "#menu") {
+        window.location.hash = "menu";
+    }
+
 }
 
 function closeMenu() {
@@ -16,8 +19,9 @@ function closeMenu() {
     document.getElementById("menuModal").style.display = "none";
 
     document.body.style.overflow = "auto";
+
     if (window.location.hash === "#menu") {
-    history.back();
+        history.back();
     }
 
 }
@@ -26,10 +30,8 @@ window.onclick = function(event) {
 
     const modal = document.getElementById("menuModal");
 
-    if (event.target == modal) {
-
+    if (event.target === modal) {
         closeMenu();
-
     }
 
 }
@@ -37,12 +39,11 @@ window.onclick = function(event) {
 document.addEventListener("keydown", function(event){
 
     if(event.key === "Escape"){
-
         closeMenu();
-
     }
 
 });
+
 document.querySelectorAll(".card").forEach(card => {
 
     card.addEventListener("touchstart", () => {
@@ -52,5 +53,23 @@ document.querySelectorAll(".card").forEach(card => {
     card.addEventListener("touchend", () => {
         card.style.transform = "";
     });
+
+});
+
+window.addEventListener("hashchange", function () {
+
+    const modal = document.getElementById("menuModal");
+
+    if (window.location.hash === "#menu") {
+
+        modal.style.display = "block";
+        document.body.style.overflow = "hidden";
+
+    } else {
+
+        modal.style.display = "none";
+        document.body.style.overflow = "auto";
+
+    }
 
 });
