@@ -7,6 +7,7 @@ function openMenu(title, image) {
     document.getElementById("menuModal").style.display = "block";
 
     document.body.style.overflow = "hidden";
+    history.pushState({modal:true}, "", "");
 
 }
 
