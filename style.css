@@ -266,11 +266,17 @@ letter-spacing:2px;
 
 .hero p{
 font-size:18px;
+    opacity:0;
+animation:fadeUp .8s ease forwards;
+animation-delay:.6s;
 }
 
 .hero span{
 font-size:13px;
 padding:8px 20px;
+    opacity:0;
+animation:fadeUp .8s ease forwards;
+animation-delay:1s;
 }
  .hero-logo{
     width:280px;
@@ -280,6 +286,9 @@ padding:8px 20px;
     margin:0 auto 10px;
     filter:
         drop-shadow(0 10px 25px rgba(0,0,0,.35));
+     opacity:0;
+animation:fadeUp .8s ease forwards;
+animation-delay:.2s;
  }
 
 .categories{
@@ -379,6 +388,19 @@ left:18px;
         opacity:1;
         transform:scale(1);
     }
+
+}
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
 
 }
     
