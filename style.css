@@ -31,6 +31,7 @@ letter-spacing:3px;
 margin-top:10px;
 font-size:20px;
 opacity:.9;
+ text-shadow:0 3px 12px rgba(0,0,0,.45);
 }
 
 .hero span{
