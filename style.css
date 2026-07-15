@@ -109,7 +109,7 @@ z-index:5;
     box-shadow:0 18px 38px rgba(0,0,0,.28);
 
     transition:
-    transform .35s ease,
+    transform .22s cubic-bezier(.34,1.56,.64,1),
     box-shadow .35s ease,
     border-color .35s ease;
 
