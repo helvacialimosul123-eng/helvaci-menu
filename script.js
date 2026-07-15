@@ -51,3 +51,14 @@ document.querySelectorAll(".card").forEach(card => {
     });
 
 });
+window.addEventListener("popstate", function () {
+
+    const modal = document.getElementById("menuModal");
+
+    if (modal.style.display === "block") {
+
+        closeMenu();
+
+    }
+
+});
