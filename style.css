@@ -223,14 +223,15 @@ font-size:18px;
 font-size:13px;
 padding:8px 20px;
 }
-    .hero-logo{
-width:220px;
-max-width:80%;
-height:auto;
-display:block;
-margin:0 auto 20px;
-filter:drop-shadow(0 8px 20px rgba(0,0,0,.35));
-    }
+ .hero-logo{
+    width:340px;
+    max-width:90%;
+    height:auto;
+    display:block;
+    margin:0 auto 24px;
+    filter:
+        drop-shadow(0 10px 25px rgba(0,0,0,.35));
+ }
 
 .categories{
 padding:20px;
