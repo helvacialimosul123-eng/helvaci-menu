@@ -117,8 +117,6 @@ pointer-events:none;
 .card:active{
     transform:scale(.96);
     transition:transform .12s ease;
-}
-
     box-shadow:
         0 10px 25px rgba(0,0,0,.35);
 }
