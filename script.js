@@ -7,7 +7,7 @@ function openMenu(title, image) {
     document.getElementById("menuModal").style.display = "block";
 
     document.body.style.overflow = "hidden";
-    history.pushState({modal:true}, "", "");
+    
 
 }
 
@@ -51,14 +51,4 @@ document.querySelectorAll(".card").forEach(card => {
     });
 
 });
-window.addEventListener("popstate", function () {
 
-    const modal = document.getElementById("menuModal");
-
-    if (modal.style.display === "block") {
-
-        closeMenu();
-
-    }
-
-});
