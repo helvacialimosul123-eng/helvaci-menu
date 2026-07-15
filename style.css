@@ -54,22 +54,45 @@ z-index:5;
 }
 
 .card{
-    background:rgba(36,36,36,.82);
-    backdrop-filter:blur(14px);
-    -webkit-backdrop-filter:blur(14px);
+    position:relative;
+    background:rgba(24,24,24,.78);
+
+    backdrop-filter:blur(16px);
+    -webkit-backdrop-filter:blur(16px);
 
     border:1px solid rgba(255,255,255,.08);
+
     border-radius:28px;
 
+    overflow:hidden;
+
     padding:30px 20px;
+
     text-align:center;
+
     cursor:pointer;
 
-    box-shadow:0 20px 45px rgba(0,0,0,.35);
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.35);
 
     transition:.35s;
 }
 
+.card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    border-radius:28px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,.06),
+            rgba(255,255,255,0)
+        );
+
+    pointer-events:none;
+}
 .card:hover{
     transform:translateY(-10px) scale(1.03);
 
