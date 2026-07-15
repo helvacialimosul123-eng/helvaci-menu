@@ -84,19 +84,25 @@ animation:cardFade .7s ease forwards;
 }
 
 .card::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    border-radius:28px;
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:3px;
 
-    background:
-        linear-gradient(
-            180deg,
-            rgba(255,255,255,.06),
-            rgba(255,255,255,0)
-        );
+background:linear-gradient(
+90deg,
+transparent,
+#d8b27b,
+#f2ddb0,
+#d8b27b,
+transparent
+);
 
-    pointer-events:none;
+opacity:.9;
+pointer-events:none;
+
 }
 .card:hover{
     transform:translateY(-10px) scale(1.03);
@@ -109,7 +115,9 @@ animation:cardFade .7s ease forwards;
 }
 
 .card:active{
-    transform:scale(.98);
+    transform:scale(.96);
+    transition:transform .12s ease;
+}
 
     box-shadow:
         0 10px 25px rgba(0,0,0,.35);
