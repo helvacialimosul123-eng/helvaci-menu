@@ -54,12 +54,3 @@ document.querySelectorAll(".card").forEach(card => {
     });
 
 });
-window.addEventListener("hashchange", function () {
-
-    if (window.location.hash !== "#menu") {
-
-        closeMenu();
-
-    }
-
-});
