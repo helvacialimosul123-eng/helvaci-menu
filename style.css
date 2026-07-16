@@ -8,9 +8,15 @@ html{
     scroll-behavior:smooth;
 }
 body{
-background:#4B352D;
+background:linear-gradient(
+180deg,
+#4B352D 0%,
+#3F2C25 45%,
+#32231D 100%
+);
+
 color:#222;
-    -webkit-font-smoothing:antialiased;
+-webkit-font-smoothing:antialiased;
 text-rendering:optimizeLegibility;
 }
 
