@@ -90,9 +90,9 @@ z-index:5;
     align-items:center;
 
 background: linear-gradient(
-180deg,
-#3A261E 0%,
-#31201A 100%
+    180deg,
+    #2B1915 0%,
+    #241510 100%
 );
 
     backdrop-filter:blur(16px);
