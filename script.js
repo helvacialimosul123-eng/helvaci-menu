@@ -1,16 +1,9 @@
+function openMenu(title, image) {
 
-
-function openMenu(title, image) { alert("openMenu works");
-currentMenu = menus.findIndex(menu =>
-    menu.title === title && menu.image === image
-);
-    
     document.getElementById("menuTitle").innerText = title;
-
     document.getElementById("menuImage").src = image;
 
     document.getElementById("menuModal").style.display = "block";
-
     document.body.style.overflow = "hidden";
 
     if (window.location.hash !== "#menu") {
@@ -22,7 +15,6 @@ currentMenu = menus.findIndex(menu =>
 function closeMenu() {
 
     document.getElementById("menuModal").style.display = "none";
-
     document.body.style.overflow = "auto";
 
     if (window.location.hash === "#menu") {
@@ -39,19 +31,17 @@ window.onclick = function(event) {
         closeMenu();
     }
 
-}
+};
 
-document.addEventListener("keydown", function(event){
+document.addEventListener("keydown", function(event) {
 
-    if(event.key === "Escape"){
+    if (event.key === "Escape") {
         closeMenu();
     }
 
 });
 
-
-
-window.addEventListener("hashchange", function () {
+window.addEventListener("hashchange", function() {
 
     const modal = document.getElementById("menuModal");
 
@@ -66,36 +56,6 @@ window.addEventListener("hashchange", function () {
         document.body.style.overflow = "auto";
 
     }
-
-
-
-
-});
-let startX = 0;
-
-
-
-function showMenu(index){
-
-    if(index < 0){
-        index = menus.length - 1;
-    }
-
-    if(index >= menus.length){
-        index = 0;
-    }
-
-    currentMenu = index;
-
-    document.getElementById("menuTitle").innerText = menus[currentMenu].title;
-
-    document.getElementById("menuImage").src = menus[currentMenu].image;
-
-}
-
-document.getElementById("nextMenu").addEventListener("click", function(){
-
-    showMenu(currentMenu + 1);
 
 });
 
