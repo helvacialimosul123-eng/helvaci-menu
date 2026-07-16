@@ -132,33 +132,8 @@ window.addEventListener("hashchange", function () {
 });
 let startX = 0;
 
-const menuImage = document.getElementById("menuImage");
 
-menuImage.addEventListener("touchstart", function(e){
 
-    startX = e.touches[0].clientX;
-
-});
-
-menuImage.addEventListener("touchend", function(e){
-
-    const endX = e.changedTouches[0].clientX;
-
-    const diff = startX - endX;
-
-    if(diff > 60){
-
-        console.log("NEXT");
-
-    }
-
-    if(diff < -60){
-
-        console.log("PREVIOUS");
-
-    }
-
-});
 function showMenu(index){
 
     if(index < 0){
