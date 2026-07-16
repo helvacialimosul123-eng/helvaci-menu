@@ -29,7 +29,7 @@
 
 <div class="hero-content">
 
-<img src="logo.png" class="hero-logo" alt="Helvaci Ali">
+<h1>MENU</h1>
 
 <p>Helvaci Ali Mosul</p>
 
@@ -60,7 +60,10 @@ onclick="openMenu(
 </div>
 
 <div class="card"
-onclick="alert('HTML works')">
+onclick="openMenu(
+'القهوة',
+'helvaciali.mosul_20260713_170727_802.jpg'
+)">
 
 <div class="emoji">
     <img src="coffee.png" class="category-image" alt="القهوة">
@@ -214,11 +217,16 @@ onclick="openMenu(
 
 <div id="menuModal" class="modal">
 
-    <span class="close" onclick="closeMenu()">&times;</span>
+<span class="close" onclick="closeMenu()">&times;</span>
 
+<h2 id="menuTitle"></h2>
 
-    <h2 id="menuTitle"></h2>
-
-    <img id="menuImage" src="" alt="Menu">
+<img id="menuImage" src="" alt="Menu">
 
 </div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
