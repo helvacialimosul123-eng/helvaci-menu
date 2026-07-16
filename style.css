@@ -6,10 +6,9 @@ font-family:'Cairo',sans-serif;
 }
 html{
     scroll-behavior:smooth;
-}
 body{
-background:#f5efe7;
-color:#222;
+    background:#180404;
+    color:#222;
     -webkit-font-smoothing:antialiased;
 text-rendering:optimizeLegibility;
 }
