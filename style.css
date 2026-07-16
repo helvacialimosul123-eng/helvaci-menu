@@ -437,3 +437,10 @@ transform:translateY(0);
     }
 
 }
+.card-touch{
+
+    transform:translateY(-3px) scale(.98);
+
+    filter:brightness(1.08);
+
+}
