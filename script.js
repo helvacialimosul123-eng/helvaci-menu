@@ -66,39 +66,3 @@ window.addEventListener("hashchange", function () {
 
 
 });
-const firstCard = document.querySelector(".card");
-
-firstCard.addEventListener("click", function(e){
-
-    e.preventDefault();
-
-    const title = this.dataset.title;
-    const image = this.dataset.image;
-
-    const ripple = document.createElement("span");
-    ripple.className = "ripple";
-
-    const rect = this.getBoundingClientRect();
-    const size = Math.max(rect.width, rect.height);
-
-    ripple.style.width = size + "px";
-    ripple.style.height = size + "px";
-
-    ripple.style.left = (e.clientX - rect.left - size/2) + "px";
-    ripple.style.top = (e.clientY - rect.top - size/2) + "px";
-
-    this.appendChild(ripple);
-
-    this.classList.add("card-touch");
-
-    setTimeout(() => {
-
-        ripple.remove();
-
-        this.classList.remove("card-touch");
-
-        openMenu(title, image);
-
-    },120);
-
-});
