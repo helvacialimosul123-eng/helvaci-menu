@@ -154,6 +154,12 @@ pointer-events:none;
     box-shadow:
         0 25px 60px rgba(0,0,0,.40),
         0 0 25px rgba(190,150,95,.18);
+} .card:hover .emoji img{
+    transform:translateY(-4px) scale(1.05);
+
+    filter:
+        drop-shadow(0 16px 24px rgba(0,0,0,.35))
+        drop-shadow(0 28px 40px rgba(60,35,18,.22));
 }
 
     .card:active{
