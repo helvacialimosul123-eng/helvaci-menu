@@ -98,7 +98,7 @@ background: linear-gradient(
     backdrop-filter:blur(16px);
     -webkit-backdrop-filter:blur(16px);
 
-    border:1px solid rgba(232,209,176,.28);
+    border:1px solid rgba(232,209,176,.22);
 
     border-radius:28px;
 
