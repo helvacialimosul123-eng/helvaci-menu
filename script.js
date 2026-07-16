@@ -183,8 +183,3 @@ document.getElementById("nextMenu").addEventListener("click", function(){
 
 });
 
-document.getElementById("prevMenu").addEventListener("click", function(){
-
-    showMenu(currentMenu - 1);
-
-});
