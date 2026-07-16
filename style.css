@@ -7,12 +7,11 @@ font-family:'Cairo',sans-serif;
 html{
     scroll-behavior:smooth;
 }
-body{
-background:linear-gradient(
+background: linear-gradient(
 180deg,
-#4B352D 0%,
-#3F2C25 45%,
-#32231D 100%
+#5A4339 0%,
+#4A352E 50%,
+#3D2C26 100%
 );
 
 color:#222;
