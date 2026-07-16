@@ -159,3 +159,32 @@ menuImage.addEventListener("touchend", function(e){
     }
 
 });
+function showMenu(index){
+
+    if(index < 0){
+        index = menus.length - 1;
+    }
+
+    if(index >= menus.length){
+        index = 0;
+    }
+
+    currentMenu = index;
+
+    document.getElementById("menuTitle").innerText = menus[currentMenu].title;
+
+    document.getElementById("menuImage").src = menus[currentMenu].image;
+
+}
+
+document.getElementById("nextMenu").addEventListener("click", function(){
+
+    showMenu(currentMenu + 1);
+
+});
+
+document.getElementById("prevMenu").addEventListener("click", function(){
+
+    showMenu(currentMenu - 1);
+
+});
