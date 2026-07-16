@@ -1,5 +1,69 @@
-function openMenu(title, image) {
+const menus = [
 
+{
+title:"حلوى السميد",
+image:"helvaciali.mosul_20260713_170724_401.jpg"
+},
+
+{
+title:"القهوة",
+image:"helvaciali.mosul_20260713_170727_802.jpg"
+},
+
+{
+title:"قهوة الحليب",
+image:"helvaciali.mosul_20260713_170731_340.jpg"
+},
+
+{
+title:"آيس لاتيه",
+image:"helvaciali.mosul_20260713_170737_476.jpg"
+},
+
+{
+title:"فرابي وموهيتو",
+image:"helvaciali.mosul_20260713_170741_607.jpg"
+},
+
+{
+title:"العصائر",
+image:"helvaciali.mosul_20260713_170744_003.jpg"
+},
+
+{
+title:"الشاي والسموذي",
+image:"helvaciali.mosul_20260713_170746_034.jpg"
+},
+
+{
+title:"التشيزكيك والحلويات",
+image:"helvaciali.mosul_20260713_170747_675.jpg"
+},
+
+{
+title:"الكوكيز والمعجنات",
+image:"helvaciali.mosul_20260713_170753_150.jpg"
+},
+
+{
+title:"البان كيك والكريب",
+image:"helvaciali.mosul_20260713_170751_585.jpg"
+},
+
+{
+title:"الميني بان كيك",
+image:"helvaciali.mosul_20260713_170753_150.jpg"
+}
+
+];
+
+let currentMenu = 0;
+
+function openMenu(title, image) { 
+currentMenu = menus.findIndex(menu =>
+    menu.title === title && menu.image === image
+);
+    
     document.getElementById("menuTitle").innerText = title;
 
     document.getElementById("menuImage").src = image;
@@ -64,5 +128,34 @@ window.addEventListener("hashchange", function () {
 
 
 
+
+});
+let startX = 0;
+
+const menuImage = document.getElementById("menuImage");
+
+menuImage.addEventListener("touchstart", function(e){
+
+    startX = e.touches[0].clientX;
+
+});
+
+menuImage.addEventListener("touchend", function(e){
+
+    const endX = e.changedTouches[0].clientX;
+
+    const diff = startX - endX;
+
+    if(diff > 60){
+
+        console.log("NEXT");
+
+    }
+
+    if(diff < -60){
+
+        console.log("PREVIOUS");
+
+    }
 
 });
