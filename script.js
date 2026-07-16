@@ -59,7 +59,7 @@ image:"helvaciali.mosul_20260713_170753_150.jpg"
 
 let currentMenu = 0;
 
-function openMenu(title, image) { 
+function openMenu(title, image) { alert("openMenu works");
 currentMenu = menus.findIndex(menu =>
     menu.title === title && menu.image === image
 );
