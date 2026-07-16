@@ -90,12 +90,7 @@ z-index:5;
     flex-direction:column;
     align-items:center;
 
-    background:linear-gradient(
-180deg,
-rgba(43,24,15,.92) 0%,
-rgba(31,17,11,.95) 100%
-);
-
+    background: rgba(28,18,14,.72);
     backdrop-filter:blur(16px);
     -webkit-backdrop-filter:blur(16px);
 
