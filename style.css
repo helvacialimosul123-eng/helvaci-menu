@@ -258,7 +258,7 @@ color:#d0d0d0;
 
     margin-top:20px;
 animation:zoom .25s ease;
-    animation:zoomImage .35s cubic-bezier(.22,.61,.36,1);
+    animation:zoomImage .35s cubic-bezier(.22,.61,.36,1) .18s both;
 }
 
 .modal h2{
