@@ -162,15 +162,8 @@ inset 0 1px 0 rgba(255,255,255,.03);
 
     opacity:.9;
     pointer-events:none;
-}
-.card:hover{
-    transform:translateY(-10px) scale(1.03);
 
-    border:1px solid rgba(255,255,255,.18);
 
-    box-shadow:
-        0 25px 60px rgba(0,0,0,.40),
-        0 0 25px rgba(190,150,95,.18);
 } .card:hover .emoji img{
     transform:translateY(-4px) scale(1.05);
 
@@ -178,26 +171,7 @@ inset 0 1px 0 rgba(255,255,255,.03);
         drop-shadow(0 16px 24px rgba(0,0,0,.35))
         drop-shadow(0 28px 40px rgba(60,35,18,.22));
 }
-.card::before{
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:3px;
 
-    background:linear-gradient(
-        90deg,
-        transparent,
-        #d8b27b,
-        #f2ddb0,
-        #d8b27b,
-        transparent
-    );
-
-    opacity:.9;
-    pointer-events:none;
-}
     .card:active{
 
     transform:scale(.97);
