@@ -164,13 +164,7 @@ inset 0 1px 0 rgba(255,255,255,.03);
     pointer-events:none;
 
 
-} .card:hover .emoji img{
-    transform:translateY(-4px) scale(1.05);
-
-    filter:
-        drop-shadow(0 16px 24px rgba(0,0,0,.35))
-        drop-shadow(0 28px 40px rgba(60,35,18,.22));
-}
+} 
 
     .card:active{
 
