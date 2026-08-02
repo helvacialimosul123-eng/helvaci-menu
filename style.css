@@ -74,7 +74,7 @@ text-rendering:optimizeLegibility;
 .hero-content{
     position: relative;
     z-index: 2;
-    transform: translateY(-65px);
+    transform: translateY(-75px);
 
 
     display:flex;
