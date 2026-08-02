@@ -105,18 +105,17 @@ opacity:.9;
 .hero span{
 display:inline-block;
 margin-top:8px;
-padding:8px 22px;
+padding:6px 18px;
 
 color:#F2D6A2;
-font-weight:700;
 
 background:rgba(255,255,255,.05);
 
 border:1px solid rgba(232,209,176,.35);
 
-border-radius:30px;
+border-radius:26px;
 
-font-size:14px;
+font-size:13px;
 font-weight:600;
 letter-spacing:.5px;
 
@@ -126,7 +125,8 @@ backdrop-filter:blur(10px);
 box-shadow:
 0 6px 20px rgba(0,0,0,.25),
 inset 0 1px 0 rgba(255,255,255,.08);
- transition:.3s;
+
+transition:.3s;
 }
 .hero span:hover{
 transform:translateY(-2px);
