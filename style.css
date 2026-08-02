@@ -83,7 +83,7 @@ opacity:.9;
 .hero span{
 display:inline-block;
 margin-top:8px;
-padding:10px 26px;
+padding:8px 22px;
 
 color:#F2D6A2;
 font-weight:700;
@@ -92,9 +92,9 @@ background:rgba(255,255,255,.05);
 
 border:1px solid rgba(232,209,176,.35);
 
-border-radius:40px;
+border-radius:30px;
 
-font-size:15px;
+font-size:14px;
 font-weight:600;
 letter-spacing:.5px;
 
