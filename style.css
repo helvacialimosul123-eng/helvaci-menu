@@ -27,7 +27,7 @@ text-rendering:optimizeLegibility;
     color:#fff;
     text-align:center;
 
-    padding:70px 20px 95px;
+    padding:70px 20px 140px;
 }
 .hero::after{
     content:"";
