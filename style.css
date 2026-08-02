@@ -46,8 +46,9 @@ text-rendering:optimizeLegibility;
     inset:0;
 
     background:linear-gradient(
-        rgba(20,12,10,.60),
-        rgba(20,12,10,.70)
+    rgba(20,12,10,.45),
+    rgba(20,12,10,.55)
+
     );
 
     z-index:1;
@@ -68,9 +69,13 @@ text-rendering:optimizeLegibility;
 
 }
 .hero h1{
-font-size:42px;
-font-weight:800;
-letter-spacing:3px;
+    font-size:42px;
+    font-weight:800;
+    letter-spacing:3px;
+
+    text-shadow:
+        0 4px 18px rgba(0,0,0,.45),
+        0 0 18px rgba(232,209,176,.18);
 }
 
 .hero p{
